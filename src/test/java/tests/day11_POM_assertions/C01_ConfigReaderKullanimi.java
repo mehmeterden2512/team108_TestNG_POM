@@ -23,7 +23,7 @@ public class C01_ConfigReaderKullanimi {
         //Nutella icin arama yapalim
         //Test datasi olarak verilen kelime icin arama yapalim
         AmazonPage amazonPage=new AmazonPage();
-        AmazonPage.aramaKutusu.sendKeys(ConfigReader.getProperty("amazonAranacakKelime")+ Keys.ENTER);
+        amazonPage.aramaKutusu.sendKeys(ConfigReader.getProperty("amazonAranacakKelime")+ Keys.ENTER);
 
         //arama sonuclarının Nutella icerdigini test edelim
         String expectedIcerik=ConfigReader.getProperty("amazonAranacakKelime");
