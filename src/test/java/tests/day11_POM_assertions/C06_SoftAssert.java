@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class C06_SoftAssert {
-    @Test
+    @Test(groups = {"mr2","mr1"})
     public void webappTesti(){
         // 1. “http://zero.webappsecurity.com/” Adresine gidin
 
@@ -45,7 +45,7 @@ public class C06_SoftAssert {
         softAssert.assertEquals(actualSecim,expectedSecim,"dropdownda eurozone secili degil");
         // 10. soft assert kullanarak DropDown listesinin su secenekleri oldugunu
         List<WebElement> optionsElementList=select.getOptions();
-       List<String> optionsStringList= ReusableMethods.stringListeCevir(optionsElementList);
+       List<String> actualOptionsStringList= ReusableMethods.stringListeCevir(optionsElementList);
        String [] expectedArr={"Select One", "Australia (dollar)", "Canada (dollar)","Switzerland (franc)","China (yuan)",
                "Denmark (krone)","Eurozone (euro)","Great Britain (pound)","Hong Kong (dollar)",
                "Japan (yen)","Mexico (peso)","Norway (krone)","New Zealand (dollar)","Sweden (krona)", "Singapore (dollar)","Thailand (baht)"};
@@ -54,7 +54,7 @@ public class C06_SoftAssert {
              ) {
             expectedOptionsList.add(each);
         }
-        softAssert.assertEquals(expectedOptionsList,optionsStringList);
+        softAssert.assertEquals(expectedOptionsList,actualOptionsStringList);
         // test edin "Select One", "Australia (dollar)", "Canada (dollar)","Switzerland (franc)","China (yuan)",
         // "Denmark (krone)","Eurozone (euro)","Great Britain (pound)","Hong Kong (dollar)"
         // ,"Japan (yen)","Mexico (peso)","Norway (krone)","New Zealand (dollar)","Sweden (krona)",

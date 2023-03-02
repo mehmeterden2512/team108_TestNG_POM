@@ -18,6 +18,7 @@ public class C03_NegatifLoginTesti {
     QdPage qdPage=new QdPage();
     @Test
     public void negatifLogin1(){
+        qdPage=new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
         qdPage.ilkloginLinki.click();
         qdPage.cookiesKabulButonu.click();
@@ -29,7 +30,7 @@ public class C03_NegatifLoginTesti {
         Assert.assertTrue(qdPage.emailKutusu.isEnabled());
 
     }
-    @Test
+    @Test(groups = "smoke")
     public void negatifLogin2(){
         qdPage=new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
@@ -41,7 +42,7 @@ public class C03_NegatifLoginTesti {
         Assert.assertTrue(qdPage.emailKutusu.isEnabled());
 
     }
-    @Test
+    @Test(groups = {"smoke", "mr1"})
     public void negatifLogin3(){
         qdPage=new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
