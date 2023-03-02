@@ -1,12 +1,12 @@
 package tests.day11_POM_assertions;
 
-import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.QdPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
+
 
 public class C03_NegatifLoginTesti {
     //qd anassayfaya gidin
