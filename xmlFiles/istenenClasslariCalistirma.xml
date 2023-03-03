@@ -12,6 +12,7 @@
         <classes>
             <class name="tests.day11_POM_assertions.C02_PozitifLoginTesti"></class>
             <class name="tests.day11_POM_assertions.C03_NegatifLoginTesti"></class>
+
         </classes>
 
     </test>

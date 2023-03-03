@@ -2,7 +2,9 @@
 <suite name="Istenen package'lari calıstırma">
     <test name="day11 Test">
         <packages>
-            <package name="tests.day11_POM_assertions"></package>
+            <package name="tests.day11_POM_assertions">
+
+            </package>
         </packages>
     </test>
 </suite>

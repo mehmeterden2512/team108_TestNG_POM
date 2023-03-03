@@ -3,6 +3,7 @@ package tests.day11_POM_assertions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import utilities.Driver;
 
 public class C04_HardAssert_SoftAssert {
     @Test
@@ -34,11 +35,12 @@ public class C04_HardAssert_SoftAssert {
             exception olabilir
          */
         SoftAssert softAssert=new SoftAssert();
-        softAssert.assertTrue(5>8,"true testi ");
-        softAssert.assertFalse(8==8);
+        softAssert.assertTrue(10>8,"true testi ");
+        softAssert.assertFalse(8==8,"false testi");
         softAssert.assertEquals(5,9);
         softAssert.assertNotEquals(6,6);
 
         softAssert.assertAll();
+        Driver.closeDriver();
     }
 }

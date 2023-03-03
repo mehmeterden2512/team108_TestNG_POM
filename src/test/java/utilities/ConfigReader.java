@@ -10,6 +10,9 @@ public class ConfigReader {
     ihtiyac olan yere getirmesi icin olustutulmustur.
      */
     static Properties properties;
+
+
+
     static {//once calısır
         String dosyaYolu= "configuration.properties";
         try {
@@ -20,6 +23,8 @@ public class ConfigReader {
             System.out.println("properties dosyasi okunamadi");
         }
     }
+
+
     public static String getProperty(String key){
         return properties.getProperty(key);
     }
