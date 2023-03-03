@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -67,5 +68,6 @@ public class Q3 {
         System.out.println(kontrolList + "\n" +fiyatlarDoubleList);
         softAssert.assertEquals(fiyatlarDoubleList,kontrolList,"Siralama gerceklesmemistir");
         softAssert.assertAll();
+        Driver.closeDriver();
     }
 }
