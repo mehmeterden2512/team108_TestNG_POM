@@ -10,7 +10,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 public class C02_PozitifLoginTesti {
-    @Test
+    @Test(groups = {"mr1","smoke"})
     public void pozitifLoginTesti(){
         //qd ana sayfaya gidin
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));

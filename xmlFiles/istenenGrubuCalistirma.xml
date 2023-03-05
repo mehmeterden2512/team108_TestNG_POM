@@ -16,6 +16,8 @@
             <run>
                 <include name="smoke"></include>
                 <exclude name="mr1"></exclude>
+                <!-- bir test methodu hem dahil(include)  hem de haric olarak işartlenmişse  groups calıştırmalarında (exclude) 'u
+                tercih eder ornek @Test(groups = {"mr1","smoke"}) -->
             </run>
         </groups>
         

@@ -24,8 +24,8 @@ public class HotelMyCampFrameWork extends TestBaseRapor {
         hotelMyCampPage.ikinciLoginButtonu.click();
         extentTest.info("username ve password girildikten sonra login buttona clik yapıldı");
 
-        Assert.assertFalse(hotelMyCampPage.basarizGirisSonucYaziElementi.isDisplayed());
-        extentTest.fail("Test FAILED");
+        Assert.assertFalse(!hotelMyCampPage.basarizGirisSonucYaziElementi.isDisplayed());
+        extentTest.pass("beklentim giris yapılamamasi");
 
     }
 }
