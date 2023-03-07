@@ -20,6 +20,7 @@ public class C01_PozitifLoginTestiCross extends TestBaseCross {
         // login linkine tiklayin
         WebElement ilkLoginLinki = driver.findElement(By.linkText("Log in"));
         ilkLoginLinki.click();
+        driver.findElement(By.xpath("//a[text()='Accept']")).click();
 
         // gecerli kullanici adi ve password ile giris yapin
         WebElement emailKutusu = driver.findElement(By.id("login-email"));
@@ -27,7 +28,7 @@ public class C01_PozitifLoginTestiCross extends TestBaseCross {
 
         WebElement passwordKutusu = driver.findElement(By.id("login-password"));
         passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
-
+        ReusableMethods.bekle(3);
         driver.findElement(By.xpath("//button[text()='Login']")).click();
 
         // basarili bir sekilde giris yapildigini test edin
