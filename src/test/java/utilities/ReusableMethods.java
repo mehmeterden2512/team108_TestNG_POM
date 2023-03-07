@@ -27,7 +27,7 @@ public class ReusableMethods {
         return target;
     }
     //========Switching Window=====//
-    public static void switchToWindow(String targetTitle) {
+    public static void  switchToWindow(String targetTitle) {
         String origin = Driver.getDriver().getWindowHandle();
         for (String handle : Driver.getDriver().getWindowHandles()) {
             Driver.getDriver().switchTo().window(handle);
