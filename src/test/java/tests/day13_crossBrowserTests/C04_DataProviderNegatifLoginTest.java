@@ -28,8 +28,13 @@ public class C04_DataProviderNegatifLoginTest {
        QdPage qdPage=new QdPage();
        ReusableMethods.bekle(2);
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
+
         qdPage.ilkloginLinki.click();
-        qdPage.cookiesKabulButonu.click();
+
+
+
+            qdPage.cookiesKabulButonu.click();
+
         qdPage.emailKutusu.sendKeys(username);
         qdPage.passwordKutusu.sendKeys(password);
         ReusableMethods.bekle(2);
