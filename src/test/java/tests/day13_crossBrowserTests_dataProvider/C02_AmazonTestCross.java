@@ -1,11 +1,10 @@
-package tests.day13_crossBrowserTests;
+package tests.day13_crossBrowserTests_dataProvider;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utilities.Driver;
 import utilities.TestBaseCross;
 
 public class C02_AmazonTestCross extends TestBaseCross {

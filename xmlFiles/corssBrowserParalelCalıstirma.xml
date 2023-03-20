@@ -4,7 +4,7 @@
     <test name="Sirali crossbrowser chrome">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-            <class name="tests.day13_crossBrowserTests.C01_PozitifLoginTestiCross"></class>
+            <class name="tests.day13_crossBrowserTests_dataProvider.C01_PozitifLoginTestiCross"></class>
 
         </classes>
     </test>
@@ -12,7 +12,7 @@
         <parameter name="browser" value="edge"></parameter>
         <classes>
 
-            <class name="tests.day13_crossBrowserTests.C02_AmazonTestCross"></class>
+            <class name="tests.day13_crossBrowserTests_dataProvider.C02_AmazonTestCross"></class>
         </classes>
     </test>
 </suite>
